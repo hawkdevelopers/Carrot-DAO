@@ -104,7 +104,7 @@ export const Navbar = () => {
 						startContent={<HeartFilledIcon className="text-danger" />}
 						variant="flat"
 					>
-						Sponsor
+						Launch DApp
 					</Button>
 				</NavbarItem>
 			</NavbarContent>
