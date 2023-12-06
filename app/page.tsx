@@ -14,11 +14,13 @@ import {
   ScrollTextIcon,
 } from "lucide-react";
 import { Header } from "@/components/header";
+import Community from "@/components/community";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+    <section className="flex flex-col items-center justify-center gap-8 py-8 md:py-10">
       <Header />
+      <Community />
     </section>
   );
 }

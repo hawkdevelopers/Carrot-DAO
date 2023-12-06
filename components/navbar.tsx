@@ -96,14 +96,15 @@ const Navbar = () => {
 
         <NavbarItem className="hidden md:flex">
           <Button
+            radius="md"
             role="button"
             isExternal
             as={Link}
-            className="text-sm font-semibold  bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
+            className=" bg-gradient-to-bl from-orange-500  to-orange-300"
             href={siteConfig.links.sponsor}
             variant="solid"
           >
-            Launch dApp
+            <span className="text-sm font-semibold text-white"> Launch dApp</span>
           </Button>
         </NavbarItem>
       </NavbarContent>
