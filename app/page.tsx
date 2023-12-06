@@ -17,7 +17,8 @@ import {
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="grid  lg:grid-cols-2 gap-4">
+      {/* <div className="grid  lg:grid-cols-2 gap-4">
+        
         <div className="inline-flex flex-col items-start    space-y-4 order-2 lg:order-1 ">
           <span className="border-2 text-xs font-semibold w-max rounded-full px-4 py-2 bg-orange-200/50 text-orange-500 border-orange-500">
             Jump start your assets
@@ -57,7 +58,7 @@ export default function Home() {
             alt="Carrot World"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

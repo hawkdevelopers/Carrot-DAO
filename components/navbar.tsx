@@ -1,3 +1,4 @@
+"use client";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -18,6 +19,8 @@ import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 
+import { motion } from "framer-motion";
+
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
   TwitterIcon,
@@ -29,8 +32,26 @@ import {
 import { Carrot } from "lucide-react";
 
 export const Navbar = () => {
+  const container = {
+    hidden: { opacity: 0, y: -100 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.5,
+      },
+    },
+  };
+
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar
+      maxWidth="xl"
+      position="sticky"
+      as={motion.div}
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
