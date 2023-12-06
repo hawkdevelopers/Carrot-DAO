@@ -31,7 +31,7 @@ import { Carrot } from "lucide-react";
 export const Navbar = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full sticky top-0" justify="start">
+      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Carrot size={30} className="fill-orange-500 stroke-1" />
@@ -79,9 +79,9 @@ export const Navbar = () => {
             as={Link}
             className="text-sm font-semibold  bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
             href={siteConfig.links.sponsor}
-            variant="flat"
+            variant="solid"
           >
-            Launch Dapp
+            Launch dApp
           </Button>
         </NavbarItem>
       </NavbarContent>
