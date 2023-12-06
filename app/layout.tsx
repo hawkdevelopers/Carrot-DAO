@@ -3,10 +3,11 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
-import { Navbar } from "@/components/nav/navbar";
+
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { subtitle, title } from "@/components/primitives";
+import { Navbar } from "@/components/nav/navbar";
 
 export const metadata: Metadata = {
   title: {
