@@ -9,6 +9,7 @@ import clsx from "clsx";
 import { subtitle, title } from "@/components/primitives";
 import { Navbar } from "@/components/navbar";
 
+
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
