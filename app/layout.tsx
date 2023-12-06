@@ -7,7 +7,8 @@ import { Providers } from "./providers";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { subtitle, title } from "@/components/primitives";
-import { Navbar } from "@/components/navbar";
+import Navbar from "@/components/navbar";
+
 
 
 export const metadata: Metadata = {
