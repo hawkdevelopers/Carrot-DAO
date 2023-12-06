@@ -13,7 +13,7 @@ import {
   ExternalLinkIcon,
   ScrollTextIcon,
 } from "lucide-react";
-import { Header } from "@/components/header/header";
+import { Header } from "@/components/header";
 
 export default function Home() {
   return (
