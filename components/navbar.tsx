@@ -30,8 +30,11 @@ import {
 } from "@/components/icons";
 
 import { Carrot } from "lucide-react";
+import React from "react";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   const container = {
     hidden: { opacity: 0, y: -100 },
     show: {
@@ -49,6 +52,9 @@ const Navbar = () => {
       position="sticky"
       as={motion.div}
       variants={container}
+      isBordered
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
       initial="hidden"
       animate="show"
     >
@@ -104,7 +110,10 @@ const Navbar = () => {
             href={siteConfig.links.sponsor}
             variant="solid"
           >
-            <span className="text-sm font-semibold text-white"> Launch dApp</span>
+            <span className="text-sm font-semibold text-white">
+              {" "}
+              Launch dApp
+            </span>
           </Button>
         </NavbarItem>
       </NavbarContent>
@@ -129,8 +138,9 @@ const Navbar = () => {
                     ? "danger"
                     : "foreground"
                 }
-                href="#"
+                href={`${item.href}`}
                 size="lg"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
               </Link>

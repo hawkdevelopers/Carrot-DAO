@@ -58,6 +58,7 @@ const Community = () => {
 
   return (
     <motion.div
+      id="dao"
       variants={container}
       initial="hidden"
       animate="show"

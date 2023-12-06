@@ -8,8 +8,6 @@ import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import Navbar from "@/components/navbar";
 
-
-
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -33,11 +31,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br" suppressHydrationWarning>
+    <html
+      lang="pt-br"
+      suppressHydrationWarning
+      className="scroll-smooth focus:scroll-auto"
+    >
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased ",
           fontSans.variable
         )}
         cz-shortcut-listen="true"

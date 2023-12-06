@@ -19,6 +19,7 @@ export const Header = () => {
 
   return (
     <motion.div
+      id="home"
       variants={container}
       initial="hidden"
       animate="show"
